@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kartikey Singh | Developer Portfolio</title>
+  <meta name="description"
+    content="Kartikey Singh — aspiring developer focused on problem solving, modern web technologies and building practical, user-friendly applications.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
+  <script>document.documentElement.className = "js"</script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <nav class="wrap nav-in" aria-label="Primary">
+      <a href="#home" class="logo"><span data-bind="initials">YN</span><i>.dev</i></a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"
+        aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul id="menu" class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="wrap hero-in">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span>Open to internships &amp; opportunities</p>
+          <h1>Hi, I'm <span class="grad" data-bind="name">Your Name</span></h1>
+          <p class="typed-line">I build <span id="typed"></span></p>
+          <p class="lead" data-bind="intro">Short introduction goes here.</p>
+          <div class="btns">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+          <ul class="socials" id="heroSocials"></ul>
+        </div>
+        <div class="hero-art reveal">
+          <div class="frame"><img src="assets/profile.jpg" alt="Profile photo (replace assets/profile.jpg)" width="640"
+              height="640" fetchpriority="high"></div>
+          <div class="chip glass c1"><img src="assets/icons/react.svg" alt="" width="18" height="18">React.js</div>
+          <div class="chip glass c2"><img src="assets/icons/cpp.svg" alt="" width="18" height="18">C++ &middot; DSA
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>01 / About</small>
+          <h2>Building things, one commit at a time</h2>
+        </div>
+        <div class="about">
+          <div class="reveal">
+            <div id="aboutText" class="prose"></div>
+            <div class="stats">
+              <div class="stat glass"><b id="projCount">9</b><span>Projects</span></div>
+              <div class="stat glass"><b>4</b><span>Languages</span></div>
+              <div class="stat glass"><b>DSA</b><span>Focused</span></div>
+            </div>
+          </div>
+          <aside class="focus glass reveal">
+            <h3>What I focus on</h3>
+            <ul>
+              <li><b>Frontend craft</b><span>Responsive, accessible interfaces with React and Tailwind CSS.</span></li>
+              <li><b>Backend basics</b><span>APIs and data modelling with Node.js and MongoDB.</span></li>
+              <li><b>Problem solving</b><span>Data structures, algorithms and clean C++ / Java.</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>02 / Skills</small>
+          <h2>Technical toolbox</h2>
+        </div>
+        <div id="skillGrid" class="skills"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>03 / Projects</small>
+          <h2>Things I've built</h2>
+        </div>
+        <div id="filters" class="filters reveal" role="group" aria-label="Filter projects"></div>
+        <div id="projectGrid" class="projects"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>04 / Education</small>
+          <h2>Academic journey</h2>
+        </div>
+        <div id="timeline" class="tl"></div>
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section id="github" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>05 / GitHub</small>
+          <h2>Code &amp; contributions</h2>
+        </div>
+        <div class="gh glass reveal">
+          <div>
+            <h3>Find my code on GitHub</h3>
+            <p class="mute">The source for my projects lives here. Stats load live from the public GitHub API.</p>
+            <a id="ghLink" class="btn primary" href="https://github.com/KartikeySingh19" target="_blank"
+              rel="noopener noreferrer">View GitHub Profile</a>
+            <p id="ghNote" class="note" role="status"></p>
+          </div>
+          <div>
+            <div class="gh-stats">
+              <div><b id="ghRepos">–</b><span>Repos</span></div>
+              <div><b id="ghFollowers">–</b><span>Followers</span></div>
+              <div><b id="ghFollowing">–</b><span>Following</span></div>
+            </div>
+            <ul id="repoList" class="repos"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="sec">
+      <div class="wrap">
+        <div class="sec-h reveal"><small>06 / Contact</small>
+          <h2>Let's work together</h2>
+        </div>
+        <div class="contact">
+          <div class="info glass reveal">
+            <h3>Get in touch</h3>
+            <p class="mute">Have an opportunity, question or idea? Send a message and I'll get back to you.</p>
+            <dl>
+              <dt>Email</dt>
+              <dd><a id="emailLink" href="mailto:your.email@example.com" data-bind="email">your.email@example.com</a>
+              </dd>
+              <dt>Location</dt>
+              <dd data-bind="location">City, Country</dd>
+            </dl>
+            <ul class="socials" id="contactSocials"></ul>
+          </div>
+          <form id="form" class="form glass reveal" novalidate>
+            <label>Name<input name="name" type="text" autocomplete="name" placeholder="Your name" required
+                aria-describedby="e-name"><span class="err" id="e-name"></span></label>
+            <label>Email<input name="email" type="email" autocomplete="email" placeholder="kartiksinghr12@gmail.com"
+                required aria-describedby="e-email"><span class="err" id="e-email"></span></label>
+            <label>Message<textarea name="message" rows="5" placeholder="Tell me about your project or opportunity…"
+                required aria-describedby="e-message"></textarea><span class="err" id="e-message"></span></label>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> <span data-bind="name">Your Name</span>. All rights reserved.</p>
+      <ul class="socials" id="footSocials"></ul>
+      <a href="#home">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <button id="toTop" class="totop glass" type="button" aria-label="Back to top">&uarr;</button>
+  <div id="toast" class="toast glass" role="status"></div>
+</body>
+
+</html>
